@@ -70,7 +70,7 @@ Warning
 
 Intergalactic FM does not provide every possible combination of ``encoding`` and ``quality``.
 
-For example, as of 2015/06/03, ``mp3 + highest`` gives only 3 playlists while ``aac + highest`` gives 15 and ``mp3 + fast`` gives 30.
+For example, as of 2016/05/19, ``mp3 + highest`` gives 4 playlists while ``aac + highest`` gives only. All other combinations, for now, do not give any playlists.
 
 Some combinations are incompatible and will give zero playlist: ``aacp + highest`` and ``aac + fast``.
 

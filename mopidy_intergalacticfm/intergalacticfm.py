@@ -28,7 +28,7 @@ logger = logging.getLogger(__name__)
 
 class IntergalacticFMClient(object):
 
-    CHANNELS_URI = "https://api.intergalacticfm.com/channels.xml"
+    CHANNELS_URI = "http://intergalacticfm.com/channels.xml"
     channels = {}
 
     def __init__(self, proxy_config=None, user_agent=None):
