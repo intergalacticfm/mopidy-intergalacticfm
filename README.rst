@@ -75,6 +75,10 @@ For example, as of 2016/05/19, ``mp3 + highest`` gives 4 playlists while ``aac +
 Some combinations are incompatible and will give zero playlist: ``aacp + highest`` and ``aac + fast``.
 
 
+.. image:: fanart.jpg
+   :alt: Intergalactic FM fanart
+
+
 Project resources
 =================
 
