@@ -28,7 +28,7 @@ after_success:
 notifications:
   email:
     recipients:
-      - alpetitjean@gmail.com
+      - pander@users.sourceforge.net
     on_success: change
     on_failure: change
     use_notice: true
