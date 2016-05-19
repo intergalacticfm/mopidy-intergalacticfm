@@ -4,7 +4,7 @@ include LICENSE
 include MANIFEST.in
 include README.rst
 include CHANGES.rst
-include mopidy_somafm/ext.conf
+include mopidy_intergalacticfm/ext.conf
 include tox.ini
 
 recursive-include tests *.py

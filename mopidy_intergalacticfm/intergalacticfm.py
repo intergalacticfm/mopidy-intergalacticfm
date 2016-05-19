@@ -26,13 +26,13 @@ logger = logging.getLogger(__name__)
 #
 
 
-class SomaFMClient(object):
+class IntergalacticFMClient(object):
 
-    CHANNELS_URI = "https://api.somafm.com/channels.xml"
+    CHANNELS_URI = "https://api.intergalacticfm.com/channels.xml"
     channels = {}
 
     def __init__(self, proxy_config=None, user_agent=None):
-        super(SomaFMClient, self).__init__()
+        super(IntergalacticFMClient, self).__init__()
 
         # Build requests session
         self.session = requests.Session()
@@ -92,7 +92,7 @@ class SomaFMClient(object):
             if 'pls' in channel_data:
                 self.channels[pls_id] = channel_data
 
-        logger.info('Loaded %i SomaFM channels' % (len(self.channels)))
+        logger.info('Loaded %i Intergalactic FM channels' % (len(self.channels)))
 
     def extractStreamUrlFromPls(self, pls_uri):
         pls_content = self._downloadContent(pls_uri)
@@ -119,20 +119,20 @@ class SomaFMClient(object):
 
             if r.status_code is not 200:
                 logger.error(
-                    "SomaFM: %s is not reachable [http code:%i]",
+                    "Intergalactic FM: %s is not reachable [http code:%i]",
                     url, r.status_code)
                 return None
 
         except requests.exceptions.RequestException as e:
-            logger.error("SomaFM RequestException: %s", e)
+            logger.error("Intergalactic FM RequestException: %s", e)
         except requests.exceptions.ConnectionError as e:
-            logger.error("SomaFM ConnectionError: %s", e)
+            logger.error("Intergalactic FM ConnectionError: %s", e)
         except requests.exceptions.URLRequired as e:
-            logger.error("SomaFM URLRequired: %s", e)
+            logger.error("Intergalactic FM URLRequired: %s", e)
         except requests.exceptions.TooManyRedirects as e:
-            logger.error("SomaFM TooManyRedirects: %s", e)
+            logger.error("Intergalactic FM TooManyRedirects: %s", e)
         except Exception as e:
-            logger.error("SomaFM exception: %s", e)
+            logger.error("Intergalactic FM exception: %s", e)
         else:
             return r.text
 

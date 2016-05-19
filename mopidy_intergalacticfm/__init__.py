@@ -9,8 +9,8 @@ __version__ = '1.0.0'
 
 class Extension(ext.Extension):
 
-    dist_name = 'Mopidy-SomaFM'
-    ext_name = 'somafm'
+    dist_name = 'Mopidy-IntergalacticFM'
+    ext_name = 'intergalacticfm'
     version = __version__
 
     def get_default_config(self):
@@ -28,5 +28,5 @@ class Extension(ext.Extension):
         pass
 
     def setup(self, registry):
-        from .actor import SomaFMBackend
-        registry.add('backend', SomaFMBackend)
+        from .actor import IntergalacticFMBackend
+        registry.add('backend', IntergalacticFMBackend)

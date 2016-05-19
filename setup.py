@@ -11,13 +11,13 @@ def get_version(filename):
 
 
 setup(
-    name='Mopidy-SomaFM',
-    version=get_version('mopidy_somafm/__init__.py'),
-    url='http://github.com/AlexandrePTJ/mopidy-somafm/',
+    name='Mopidy-IntergalacticFM',
+    version=get_version('mopidy_intergalacticfm/__init__.py'),
+    url='http://github.com/intergalacticfm/mopidy-intergalacticfm/',
     license='MIT License',
     author='Alexandre Petitjean',
     author_email='alpetitjean@gmail.com',
-    description='SomaFM extension for Mopidy',
+    description='Intergalactic FM extension for Mopidy',
     long_description="%s\n\n%s" % (
         open('README.rst').read(),
         open('CHANGES.rst').read()),
@@ -32,7 +32,7 @@ setup(
     ],
     entry_points={
         'mopidy.ext': [
-            'somafm = mopidy_somafm:Extension',
+            'intergalacticfm = mopidy_intergalacticfm:Extension',
         ],
     },
     classifiers=[
